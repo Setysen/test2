@@ -68,11 +68,11 @@ public final class App {
 
     public static double[][] sum(double[][] firstMatrix, double[][] secondMatrix) {
         double[][] result = new double[firstMatrix.length][secondMatrix[0].length];
-        for (int row = 0; row < result.length; row++) {
-            for (int col = 0; col < result[row].length; col++) {
-                for (int i = 0; i < secondMatrix.length; i++) {
-                    result[row][col] = firstMatrix[row][i] + secondMatrix[i][col];
-                }
+        for (int row = 0; row < result.length; row++)
+        {
+            for (int col = 0; col < result[row].length; col++)
+            {
+                result[row][col] = firstMatrix[row][col] + secondMatrix[row][col];
             }
         }
         return result;
@@ -92,11 +92,11 @@ public final class App {
 
     public static double[][] subtraction(double[][] firstMatrix, double[][] secondMatrix) {
         double[][] result = new double[firstMatrix.length][secondMatrix[0].length];
-        for (int row = 0; row < result.length; row++) {
-            for (int col = 0; col < result[row].length; col++) {
-                for (int i = 0; i < secondMatrix.length; i++) {
-                    result[row][col] = firstMatrix[row][i] - secondMatrix[i][col];
-                }
+        for (int row = 0; row < result.length; row++)
+        {
+            for (int col = 0; col < result[row].length; col++)
+            {
+                result[row][col] = firstMatrix[row][col] - secondMatrix[row][col];
             }
         }
         return result;
